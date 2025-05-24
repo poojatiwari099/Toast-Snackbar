@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <div class="container">
+        <select name="drop" id="horizontal-position"> 
+<option value="left"selected>Left</option>
+<option value="right"selected>Right</option>
+        </select>
+
+    <select name="down" id="vertical-position">
+        <option value="top"selected>Top</option>
+        <option value="bottom"selected>Bottom</option>
+    </select>
+<select name="type" id="type">
+    <option value="normal"selected>Normal</option>
+    <option value="success"selected>Success</option>
+    <option value="error"selected>Error</option>
+    <option value="warning"selected>Warning</option>
+    <option value="info"selected>Info</option>
+</select>
+<input type="text" name="message"id="message"placeholder="message"value="this ia a toast message! " >
+
+<div class="duration">
+    <label for="input"class="flex">duration</label>
+    <input type="range"id="duration" min="3" max="10" value="5">
+    <span><output for="duration"id="duration-output">5</output>s</span>
+</div>
+<button id="button"> Show Toast</button>
+    </div>
+    
+
+</body>
+<script src="script.js"></script>
+</html>
